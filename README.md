@@ -32,11 +32,7 @@ npm install -g quick-structure
 Display all available templates in a table format:
 
 ```bash
-quick-structure
-```
-or
-```bash
-npm run list
+quick-structure list
 ```
 
 ### **Create a Structure from a Template**
@@ -58,7 +54,7 @@ After creating a structure, you can delete it interactively by confirming the pr
 
 1. List templates:
     ```bash
-    quick-structure
+    quick-structure list
     ```
 2. Select a template (e.g., ID 1):
     ```bash
@@ -88,6 +84,22 @@ API/
 ├── PUT/
 └── DELETE/
 ```
+
+---
+
+## 💻 Commands
+
+### `quick-structure list`
+Lists all available templates.
+
+### `quick-structure structure [ID]`
+Generates a folder/file structure based on a template. Replace `[ID]` with the template ID.
+
+### `quick-structure --version`
+Displays the current version of the tool.
+
+### `quick-structure --help` or `-h`
+Shows a help message with all available commands.
 
 ---
 
