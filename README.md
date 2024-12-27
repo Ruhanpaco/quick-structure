@@ -1,69 +1,98 @@
 
 # quick-structure
 
-A CLI tool to quickly create and manage folder/file structures for Next.js applications based on templates. Automate your repetitive tasks with ease!
+🚀 **A CLI tool for automating folder and file structures.**  
+Perfect for Next.js projects, **quick-structure** saves time by automating repetitive scaffolding tasks, letting you focus on building great apps.
 
-## Installation
+---
 
-To install `quick-structure` globally, use one of the following commands:
+## ✨ Features
 
-### Using npm:
+- **Predefined Templates**: Choose from ready-to-use templates for quick project setups.
+- **Customizable Structures**: Automatically create folders, files, and components.
+- **Interactive CLI**: Select templates and manage options interactively.
+- **Progress Tracking**: See real-time progress and logs during creation.
+- **Cleanup Option**: Easily delete generated structures if needed.
+
+---
+
+## 📦 Installation
+
+Install **quick-structure** globally via npm:
+
 ```bash
 npm install -g quick-structure
 ```
 
-### Using yarn:
-```bash
-yarn global add quick-structure
-```
+---
 
-## Commands
+## 🚀 Usage
 
-### List Templates
-To display all available templates:
-```bash
-quick-structure list
-```
+### **List Available Templates**
+Display all available templates in a table format:
 
-### Create Structure
-To create a folder and file structure based on a selected template:
 ```bash
-quick-structure structure [TEMPLATE_ID]
-```
-Replace `[TEMPLATE_ID]` with the template ID, for example:
-```bash
-quick-structure structure 1
-```
-
-### Force Command
-To skip the confirmation and create the structure automatically:
-```bash
-quick-structure structure 1 --force
-```
-
-### Check Version
-To check the current version of `quick-structure`:
-```bash
-quick-structure --version
-```
-
-### Help
-To display the help message with all available commands:
-```bash
-quick-structure --help
+quick-structure
 ```
 or
 ```bash
-quick-structure -h
+npm run list
 ```
 
-## Available Templates
+### **Create a Structure from a Template**
+Choose a template interactively:
+```bash
+quick-structure
+```
+or create a structure directly by template ID:
+```bash
+quick-structure structure [ID]
+```
 
-- **Default Structure**: Basic structure for a Next.js app.
-  - Folders: `src/app/about`, `src/app/contact`, `public/assets/images`, `API/GET`, `API/POST`, `API/PUT`, `API/DELETE`
-  - Files: `src/app/about/page.tsx`, `src/app/contact/page.tsx`
+### **Delete Generated Structure**
+After creating a structure, you can delete it interactively by confirming the prompt. Alternatively, delete the folders/files manually.
 
-- **Blog Structure**: A simple blog structure with posts and dynamic routing.
-  - Folders: `src/app/posts`, `public/images`, `API/GET`
-  - Files: `src/app/posts/page.tsx`, `src/app/posts/[id].tsx`
+---
 
+## 🛠 Example Workflow
+
+1. List templates:
+    ```bash
+    quick-structure
+    ```
+2. Select a template (e.g., ID 1):
+    ```bash
+    quick-structure structure 1
+    ```
+3. Follow the progress logs to see folders/files being created.
+4. Optionally delete the generated structure if you don't need it.
+
+---
+
+## 📂 Example Output
+
+### **Folder Structure Created with Template ID 1:**
+```
+src/
+└── app/
+    ├── about/
+    │   └── page.tsx
+    ├── contact/
+    │   └── page.tsx
+public/
+└── assets/
+    └── images/
+API/
+├── GET/
+├── POST/
+├── PUT/
+└── DELETE/
+```
+
+---
+
+## ❤️ Thank You
+
+Thank you for using **quick-structure**! We’d love to hear your feedback and ideas for improvement.
+
+- **NPM**: [https://www.npmjs.com/package/quick-structure](https://www.npmjs.com/package/quick-structure)
