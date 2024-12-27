@@ -95,9 +95,6 @@ Lists all available templates.
 ### `quick-structure structure [ID]`
 Generates a folder/file structure based on a template. Replace `[ID]` with the template ID.
 
-### `quick-structure --version`
-Displays the current version of the tool.
-
 ### `quick-structure --help` or `-h`
 Shows a help message with all available commands.
 
